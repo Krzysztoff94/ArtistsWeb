@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     @vite('resources/css/layout.css')
     <!--<link href="{{ asset('css/layout.css') }}" rel="stylesheet">-->
@@ -7,19 +9,31 @@
 </head>
 <body>
     <header>
-        <h1>Witamy na stronie!</h1>
-        <nav>
-            <a href="/">Strona główna</a>
-            <a href="/about">O nas</a>
-        </nav>
+    <nav class="navbar">
+            <div class="logo">
+                <a href="/">ArtistsWeb</a>
+            </div>
+
+            <!-- Menu w wersji desktop (na dużych ekranach) -->
+            <div class="menu desktop-menu">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
     </header>
 
     <main>
-        @yield('content') <!-- Miejsce na treść strony -->
+        @yield('content') 
+        <h1>Witaj na stronie głównej!</h1>
+        <p>To jest moja aplikacja napisana w Laravelu!</p>
+        <!-- Miejsce na treść strony -->
     </main>
 
     <footer>
         <p>&copy; 2024 Moja aplikacja</p>
     </footer>
+    <script>
+
+</script>
 </body>
 </html>
