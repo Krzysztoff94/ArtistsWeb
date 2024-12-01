@@ -24,8 +24,6 @@
 
     <main>
         @yield('content') 
-        <h1>Witaj na stronie głównej!</h1>
-        <p>To jest moja aplikacja napisana w Laravelu!</p>
         <!-- Miejsce na treść strony -->
     </main>
 
