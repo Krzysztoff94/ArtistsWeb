@@ -15,9 +15,9 @@
 
             <!-- Menu w wersji desktop (na dużych ekranach) -->
             <div class="menu desktop-menu">
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact</a>
+                <a href="/">Główna</a>
+                <a href="/about">O nas</a>
+                <a href="/contact">Kontakt</a>
             </div>
     </header>
 
