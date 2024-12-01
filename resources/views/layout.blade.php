@@ -16,6 +16,7 @@
             <!-- Menu w wersji desktop (na dużych ekranach) -->
             <div class="menu desktop-menu">
                 <a href="/">Główna</a>
+                <a href="/">Logowanie</a>
                 <a href="/about">O nas</a>
                 <a href="/contact">Kontakt</a>
             </div>
