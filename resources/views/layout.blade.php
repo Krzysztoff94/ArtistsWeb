@@ -24,7 +24,15 @@
 
     <main>
         @yield('content') 
-        <!-- Miejsce na treść strony -->
+        <div class="image-container">
+            <img src="{{ asset('images/image1.jpg') }}" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="{{ asset('images/image2.jpg') }}" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="{{ asset('images/image3.jpg') }}" alt="Image 1">
+        </div>
     </main>
 
     <footer>

@@ -10,7 +10,24 @@ header {
     color: white;
     padding: 10px;
 }
-
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.image-container {
+    display: inline-block;
+    width: 33.33%; /* Podział na trzy kolumny */
+    height: 20.33vw; /* Wysokość kontenera w zależności od szerokości ekranu */
+    overflow: hidden; /* Ukrycie nadmiarowych części obrazu */
+}
+.image-container img {
+    width: 100%; /* Obraz wypełnia kontener */
+    height: 100%; /* Dopasowanie wysokości obrazu */
+    object-fit: cover; /* Przycięcie obrazu bez zmiany proporcji */
+}
 footer {
     background-color: #333;
     color: white;
