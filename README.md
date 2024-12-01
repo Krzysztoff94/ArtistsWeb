@@ -53,5 +53,3 @@ Clone the repository:
   ```
 ### Access the application
 Visit: http://localhost/artists/public
-
->>>>>>> f8bf23e4c8ba5eb8df6c322b418c1dd81b411a3f
