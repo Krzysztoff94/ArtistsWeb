@@ -10,7 +10,7 @@ header {
     color: white;
     padding: 10px;
 }
-main {
+.images-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

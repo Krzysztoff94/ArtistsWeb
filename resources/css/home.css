@@ -1,0 +1,13 @@
+.main-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.home-main{
+    display: inline-block;
+    width: 33.33%;
+    height: 20.33vw;
+    overflow: hidden;
+}

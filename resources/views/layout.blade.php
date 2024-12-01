@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     @vite('resources/css/layout.css')
-    <!--<link href="{{ asset('css/layout.css') }}" rel="stylesheet">-->
     @yield('head')
 </head>
 <body>
@@ -24,14 +23,16 @@
 
     <main>
         <!-- images section -->
-        <div class="image-container">
-            <img src="{{ asset('images/image1.jpg') }}" alt="Image 1">
+        <div class = "images-section">
+            <div class="image-container">
+                <img src="{{ asset('images/image1.jpg') }}" alt="Image 1">
+            </div>
+            <div class="image-container">
+                <img src="{{ asset('images/image2.jpg') }}" alt="Image 1">
+            </div>
+            <div class="image-container">
+                <img src="{{ asset('images/image3.jpg') }}" alt="Image 1">
         </div>
-        <div class="image-container">
-            <img src="{{ asset('images/image2.jpg') }}" alt="Image 1">
-        </div>
-        <div class="image-container">
-            <img src="{{ asset('images/image3.jpg') }}" alt="Image 1">
         </div>
         @yield('content') 
     </main>
