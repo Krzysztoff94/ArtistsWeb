@@ -23,7 +23,7 @@
     </header>
 
     <main>
-        @yield('content') 
+        <!-- images section -->
         <div class="image-container">
             <img src="{{ asset('images/image1.jpg') }}" alt="Image 1">
         </div>
@@ -33,6 +33,7 @@
         <div class="image-container">
             <img src="{{ asset('images/image3.jpg') }}" alt="Image 1">
         </div>
+        @yield('content') 
     </main>
 
     <footer>

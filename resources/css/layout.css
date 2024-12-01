@@ -19,14 +19,14 @@ main {
 }
 .image-container {
     display: inline-block;
-    width: 33.33%; /* Podział na trzy kolumny */
-    height: 20.33vw; /* Wysokość kontenera w zależności od szerokości ekranu */
-    overflow: hidden; /* Ukrycie nadmiarowych części obrazu */
+    width: 33.33%;
+    height: 20.33vw;
+    overflow: hidden;
 }
 .image-container img {
-    width: 100%; /* Obraz wypełnia kontener */
-    height: 100%; /* Dopasowanie wysokości obrazu */
-    object-fit: cover; /* Przycięcie obrazu bez zmiany proporcji */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 footer {
     background-color: #333;
