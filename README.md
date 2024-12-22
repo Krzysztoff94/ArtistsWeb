@@ -17,7 +17,7 @@
 
 - **Backend**: [Laravel](https://laravel.com) 11.x
 - **Frontend**: Blade templates with CSS and JavaScript
-- **Database**: MySQL or MariaDB
+- **Database**: MySQL
 - **Tools**: 
   - [Vite](https://vitejs.dev/) for asset compilation
   - Node.js for package management
@@ -28,7 +28,7 @@
 
 ### Prerequisites
 Ensure you have the following installed:
-- [XAMPP](https://www.apachefriends.org/index.html) or another PHP environment
+- [XAMPP](https://www.apachefriends.org/index.html)
 - [Composer](https://getcomposer.org/)
 - [Node.js](https://nodejs.org/)
 
