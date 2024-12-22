@@ -24,16 +24,15 @@
 
     <main>
         <!-- images section -->
-        <div class = "images-section">
-            <div class="image-container">
-                <img src="{{ asset('images/image1.jpg') }}" alt="Image 1">
+        <div  class="carousel">
+            <div class = "carousel-images">
+                <div class="image-container"><img src="{{ asset('images/image1.jpg') }}" alt="Image 1"></div>
+                <div class="image-container"><img src="{{ asset('images/image2.jpg') }}" alt="Image 2"></div>
+                <div class="image-container"><img src="{{ asset('images/image3.jpg') }}" alt="Image 3"></div>
+                <div class="image-container"><img src="{{ asset('images/image1.jpg') }}" alt="Image 1"></div>
+                <div class="image-container"><img src="{{ asset('images/image2.jpg') }}" alt="Image 2"></div>
+                <div class="image-container"><img src="{{ asset('images/image3.jpg') }}" alt="Image 3"></div>
             </div>
-            <div class="image-container">
-                <img src="{{ asset('images/image2.jpg') }}" alt="Image 1">
-            </div>
-            <div class="image-container">
-                <img src="{{ asset('images/image3.jpg') }}" alt="Image 1">
-        </div>
         </div>
         @yield('content') 
     </main>
