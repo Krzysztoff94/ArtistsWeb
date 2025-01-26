@@ -1,22 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/login', function () {
-    return view('auth.login');
-})->name('login');
+// Logowanie
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
 
-//login
-use App\Http\Controllers\Auth\LoginController;
-Route::post('/login', [LoginController::class, 'login'])->name('login');
-
-//register
-use App\Http\Controllers\Auth\RegisterController;
+// Rejestracja
 Route::get('/register', [RegisterController::class, 'create'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
-
-
+?>

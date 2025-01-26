@@ -8,23 +8,26 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
+    public function showLoginForm()
+    {
+        return view('auth.login');
+    }
+    
     public function login(Request $request)
     {
-        // Walidacja danych logowania
         $credentials = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required'],
         ]);
-
-        // Próba zalogowania użytkownika
+    
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('/'); // Po zalogowaniu przekierowanie na stronę główną
+            return redirect()->intended('/');
         }
-
-        // W przypadku nieudanej próby
+    
         return back()->withErrors([
             'email' => 'Podane dane są nieprawidłowe.',
         ]);
     }
+    
 }
